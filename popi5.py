@@ -1,7 +1,7 @@
 import time
 import random
 
-def gen (size):
+def gen (size):#создает список случайных чисел от 0 до 9 длиной
     arr = []
     for i in range (size):
         arr.append(random.randint(0, 9))
@@ -14,7 +14,8 @@ def find(haystack, needle):
         if haystack[i] == needle:
             return i
         i += 1
-    return -1 
+    return -1 #поиск элемента qw в списке cv и возвращает элемент, если он найден или -1 если элемент не найден.
+
 
 size = 1000000
 iter = 100
